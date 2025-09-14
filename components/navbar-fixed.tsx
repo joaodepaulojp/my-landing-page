@@ -5,7 +5,6 @@ import {
   NavItems,
   MobileNav,
   NavbarLogo,
-  NavbarButton,
   MobileNavHeader,
   MobileNavToggle,
   MobileNavMenu,
@@ -69,7 +68,7 @@ export function NavbarFixed() {
                 <span className="block">{item.name}</span>
               </a>
             ))}
-            <div className="flex w-full flex-col gap-4">
+            {/* <div className="flex w-full flex-col gap-4">
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
@@ -84,7 +83,7 @@ export function NavbarFixed() {
               >
                 Book a call
               </NavbarButton>
-            </div>
+            </div> */}
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
