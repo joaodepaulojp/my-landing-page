@@ -5,6 +5,7 @@ import { NavbarFloating } from "@/components/navbar-floating";
 import { PinContainer } from "@/components/ui/3d-pin";
 import { HeroParallax } from "@/components/ui/hero-parallax";
 import { Spotlight } from "@/components/ui/spotlight-new";
+import { MaskContainer } from "@/components/ui/svg-mask-effect";
 import { DownloadIcon } from "lucide-react";
 import Image from "next/image";
 
@@ -13,6 +14,7 @@ export default function Home() {
     <div className="overflow-x-hidden">
       {NavbarFixed()}
       {NavbarFloating()}
+
       <div className="h-screen w-screen rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
         <Spotlight />
         <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
@@ -46,6 +48,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="h-screen w-screen flex items-center justify-center">
         <PinContainer
           title="github.com/joaodepaulojp"
@@ -68,6 +71,22 @@ export default function Home() {
       </div>
       <div id="portfolio">
         <HeroParallax products={products} />
+      </div>
+      <div className="flex h-[40rem] w-full items-center justify-center overflow-hidden mb-12">
+        <MaskContainer
+          revealText={
+            <p className="mx-auto max-w-4xl text-center text-4xl font-bold text-slate-800 dark:text-white">
+              *ESTE COMPONENTE É APENAS PARA TESTE, PASSE O MOUSE SOBRE O TEXTO
+              PARA REVELAR UM TEXTO SECRETO*
+            </p>
+          }
+          className="h-[40rem] rounded-md border text-white dark:text-black"
+        >
+          Discover the power of{" "}
+          <span className="text-blue-500">Tailwind CSS v4</span> with native CSS
+          variables and container queries with
+          <span className="text-blue-500">advanced animations</span>.
+        </MaskContainer>
       </div>
     </div>
   );
