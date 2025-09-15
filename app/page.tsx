@@ -66,7 +66,7 @@ export default function Home() {
           </div>
         </PinContainer>
       </div>
-      <div>
+      <div id="portfolio">
         <HeroParallax products={products} />
       </div>
     </div>
@@ -74,48 +74,25 @@ export default function Home() {
 }
 export const products = [
   {
-    title: "Moonbeam",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+    title: "Vestibulado",
+    link: "https://github.com/joaodepaulojp/vestibulado-mobile",
+    thumbnail: "/mockup-vestibuladoapp.png",
   },
   {
-    title: "Cursor",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+    title: "Meu Blog",
+    link: "https://hackdodia.com",
+    thumbnail: "/hackdodia-page.png",
   },
   {
-    title: "Rogue",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+    title: "Vestibulado",
+    link: "https://github.com/joaodepaulojp/vestibulado-mobile",
+    thumbnail: "/mockup-vestibuladoapp.png",
   },
 
   {
-    title: "Editorially",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
-  },
-  {
-    title: "Editrix AI",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
-  },
-  {
-    title: "Pixel Perfect",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
-  },
-
-  {
-    title: "Algochurn",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+    title: "Meu Blog",
+    link: "https://hackdodia.com",
+    thumbnail: "/hackdodia-page.png",
   },
   {
     title: "Aceternity UI",
@@ -124,46 +101,55 @@ export const products = [
       "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
   },
   {
-    title: "Tailwind Master Kit",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
-  },
-  {
-    title: "SmartBridge",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
-  },
-  {
-    title: "Renderwork Studio",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+    title: "Meu Site",
+    link: "https://joaodepaulo.site",
+    thumbnail: "/meusite.png",
   },
 
   {
-    title: "Creme Digital",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+    title: "BarberApp",
+    link: "https://barberapp-teal.vercel.app/",
+    thumbnail: "/mockup-barberapp.png",
   },
   {
-    title: "Golden Bells Academy",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+    title: "Mc Donalds",
+    link: "https://mc-donalds-phi.vercel.app/jp-donalds",
+    thumbnail: "/mockup-mcdonalds-app.png",
   },
   {
-    title: "Invoker Labs",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+    title: "Meu Site",
+    link: "https://joaodepaulo.site",
+    thumbnail: "/meusite.png",
   },
   {
-    title: "E Free Invoice",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+    title: "Mc Donalds",
+    link: "https://mc-donalds-phi.vercel.app/jp-donalds",
+    thumbnail: "/mockup-mcdonalds-app.png",
+  },
+  {
+    title: "Vestibulado",
+    link: "https://github.com/joaodepaulojp/vestibulado-mobile",
+    thumbnail: "/mockup-vestibuladoapp.png",
+  },
+
+  {
+    title: "Acesse meu GitHub",
+    link: "https://github.com/joaodepaulojp",
+    thumbnail: "readme-github.png",
+  },
+  {
+    title: "Busca CEP",
+    link: "https://replit.com/@joaodepaulo/buscacep",
+    thumbnail: "mockup-buscacep.png",
+  },
+  {
+    title: "Meu Site",
+    link: "https://joaodepaulo.site",
+    thumbnail: "/meusite.png",
+  },
+  {
+    title: "Meu Blog",
+    link: "https://hackdodia.com",
+    thumbnail: "/hackdodia-page.png",
   },
 ];

@@ -106,8 +106,7 @@ export const Header = () => {
         Portfólio
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        Aqui você encontra alguns dos projetos do meu portfolio! MERAMENTE
-        ILUSTRATIVO POR ENQUANTO...
+        Aqui você encontra alguns dos meus projetos!
       </p>
     </div>
   );

@@ -19,7 +19,7 @@ export function NavbarFixed() {
     },
     {
       name: "Portfólio",
-      link: "#pricing",
+      link: "#portfolio",
     },
     {
       name: "Contact",
