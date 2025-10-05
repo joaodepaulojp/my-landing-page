@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "components/StaggeredMenu.jsx"
+    "components/StaggeredMenu.tsx"
   ],
   "exclude": ["node_modules"]
 }

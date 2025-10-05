@@ -21,6 +21,7 @@ export default function Home() {
       <div style={{ height: "100vh", background: "#1a1a1a" }}>
         <StaggeredMenu
           position="right"
+          //FIX: resolver erro de tipagem
           items={menuItems}
           socialItems={socialItems}
           displaySocials={true}
@@ -33,6 +34,7 @@ export default function Home() {
           accentColor="#ff6b6b"
           onMenuOpen={() => console.log("Menu opened")}
           onMenuClose={() => console.log("Menu closed")}
+          isFixed={true}
         />
       </div>
     </div>
