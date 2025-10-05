@@ -2,6 +2,7 @@
 
 import StaggeredMenu from "@/components/StaggeredMenu";
 import DarkVeil from "./DarkVeil";
+import OpacityMenu from "./opacityMenu";
 
 const menuItems = [
   { label: "Home", ariaLabel: "Go to home page", link: "/" },
@@ -15,12 +16,14 @@ const socialItems = [
   { label: "GitHub", link: "https://github.com/joaodepaulojp" },
   { label: "LinkedIn", link: "https://linkedin.com/in/joao-depaulo" },
 ];
+
 const Menu = () => {
   return (
     <div
       style={{ height: "100vh", background: "#1a1a1a" }}
       className="relative overflow-hidden"
     >
+      <OpacityMenu />
       <DarkVeil />
       <StaggeredMenu
         position="right"
