@@ -1,6 +1,7 @@
 "use client";
 
 import StaggeredMenu from "@/components/StaggeredMenu";
+import DarkVeil from "./DarkVeil";
 
 const menuItems = [
   { label: "Home", ariaLabel: "Go to home page", link: "/" },
@@ -18,8 +19,9 @@ const Menu = () => {
   return (
     <div
       style={{ height: "100vh", background: "#1a1a1a" }}
-      className="relative overflow-hidden "
+      className="relative overflow-hidden"
     >
+      <DarkVeil />
       <StaggeredMenu
         position="right"
         items={menuItems}
