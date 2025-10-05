@@ -4,22 +4,24 @@ import StaggeredMenu from "@/components/StaggeredMenu";
 
 const menuItems = [
   { label: "Home", ariaLabel: "Go to home page", link: "/" },
-  { label: "About", ariaLabel: "Learn about us", link: "/about" },
-  { label: "Services", ariaLabel: "View our services", link: "/services" },
-  { label: "Contact", ariaLabel: "Get in touch", link: "/contact" },
+  { label: "About", ariaLabel: "Learn about us", link: "/" },
+  { label: "Services", ariaLabel: "View our services", link: "/" },
+  { label: "Contact", ariaLabel: "Get in touch", link: "/" },
 ];
 
 const socialItems = [
-  { label: "Twitter", link: "https://twitter.com" },
-  { label: "GitHub", link: "https://github.com" },
-  { label: "LinkedIn", link: "https://linkedin.com" },
+  { label: "Site", link: "https://joaodepaulo.site" },
+  { label: "GitHub", link: "https://github.com/joaodepaulojp" },
+  { label: "LinkedIn", link: "https://linkedin.com/in/joao-depaulo" },
 ];
 const Menu = () => {
   return (
-    <div style={{ height: "100vh", background: "#1a1a1a" }}>
+    <div
+      style={{ height: "100vh", background: "#1a1a1a" }}
+      className="relative overflow-hidden "
+    >
       <StaggeredMenu
         position="right"
-        //FIX: resolver erro de tipagem
         items={menuItems}
         socialItems={socialItems}
         displaySocials={true}
@@ -29,7 +31,7 @@ const Menu = () => {
         changeMenuColorOnOpen={true}
         colors={["#B19EEF", "#5227FF"]}
         logoUrl="/path-to-your-logo.svg"
-        accentColor="#ff6b6b"
+        accentColor="#5227FF"
         onMenuOpen={() => console.log("Menu opened")}
         onMenuClose={() => console.log("Menu closed")}
         isFixed={true}

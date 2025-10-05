@@ -1,9 +1,10 @@
-import Menu from "@/components/menu";
+"use client";
+import StacksLogo from "@/components/stacksLogo";
 
 export default function Home() {
   return (
-    <div className="overflow-x-hidden">
-      <Menu />
+    <div className="overflow-hidden relative">
+      <StacksLogo />
     </div>
   );
 }
