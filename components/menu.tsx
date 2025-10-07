@@ -24,8 +24,11 @@ const Menu = () => {
       className="relative overflow-hidden"
     >
       <OpacityMenu />
-      <h1 className="absolute inset-0 flex items-center justify-center text-2xl font-semibold ">
+      <h1 className="absolute inset-0 flex flex-col items-center justify-center lg:text-5xl font-semibold text-2xl ">
         Olá, eu sou o João de Paulo!
+        <span className="lg:text-xl lg:mt-4 block mt-1 text-sm">
+          Clique no botão para visualizar meu curriculo
+        </span>
       </h1>
       <DarkVeil />
       <StaggeredMenu
