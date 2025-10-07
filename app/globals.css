@@ -118,5 +118,6 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-konstant-grotesk), sans-serif;
   }
 }

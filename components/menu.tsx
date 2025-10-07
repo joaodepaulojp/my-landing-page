@@ -24,6 +24,9 @@ const Menu = () => {
       className="relative overflow-hidden"
     >
       <OpacityMenu />
+      <h1 className="absolute inset-0 flex items-center justify-center text-2xl font-semibold ">
+        Olá, eu sou o João de Paulo!
+      </h1>
       <DarkVeil />
       <StaggeredMenu
         position="right"

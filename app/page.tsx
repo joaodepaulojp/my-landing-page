@@ -1,4 +1,5 @@
 "use client";
+
 import StacksLogo from "@/components/stacksLogo";
 
 export default function Home() {
