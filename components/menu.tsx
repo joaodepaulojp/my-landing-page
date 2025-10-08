@@ -21,7 +21,7 @@ const Menu = () => {
   return (
     <div
       style={{ height: "100vh", background: "#1a1a1a" }}
-      className="relative overflow-hidden"
+      className="relative overflow-hidden flex flex-col items-center justify-center"
     >
       <OpacityMenu />
       <h1 className="absolute inset-0 flex flex-col items-center justify-center lg:text-5xl font-semibold text-2xl ">
@@ -30,6 +30,19 @@ const Menu = () => {
           Clique no botão para visualizar meu curriculo
         </span>
       </h1>
+
+      <a
+        href="/curriculum-joaodepaulo.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="top-[60%] left-1/2 -translate-x-1/2 absolute inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 z-50"
+      >
+        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+          Download CV
+        </span>
+      </a>
+
       <DarkVeil />
       <StaggeredMenu
         position="right"
