@@ -17,7 +17,7 @@ const socialItems = [
   { label: "LinkedIn", link: "https://linkedin.com/in/joao-depaulo" },
 ];
 
-const Menu = () => {
+const LandingSection = () => {
   return (
     <div
       style={{ height: "100vh", background: "#1a1a1a" }}
@@ -64,4 +64,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default LandingSection;
