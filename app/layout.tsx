@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import LandingSection from "@/components/landingSection";
 
 const neueKonstant = localFont({
-  src: "../public/fonts/neuekonstantgrotesk-book.otf",
+  src: "/fonts/neuekonstantgrotesk-book.otf",
   variable: "--font-konstant-grotesk",
   weight: "400",
   style: "normal",
