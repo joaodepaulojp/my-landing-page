@@ -10,16 +10,16 @@ export default function Home() {
       <div className="h-screen w-screen flex items-center p-4 justify-center flex-col">
         <h1 className="text-3xl text-center">
           <em>
-            <span className="text-red-700">{"<"}</span>
+            <span className="text-primary">{"<"}</span>
             {"Hello World! "}
-            <span className="text-red-700">{"/>"}</span> <br />
+            <span className="text-primary">{"/>"}</span> <br />
             <span className="text-xl">
-              Bem-Vindo ao meu <span className="text-red-700">portfólio</span>!
+              Bem-Vindo ao meu <span className="text-primary">portfólio</span>!
             </span>
           </em>
         </h1>
         <Button
-          className="mt-4"
+          className="mt-4 text-white"
           onClick={() => {
             document
               .getElementById("projects")

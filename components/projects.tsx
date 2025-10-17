@@ -34,12 +34,24 @@ const Projects = () => {
           <p>{project.description}</p>
           <div className="justify-between flex">
             {project.projectUrl !== "#" && (
-              <Button asChild>
-                <a href={project.projectUrl}>Acessar Projeto</a>
+              <Button className="text-white" asChild>
+                <a
+                  href={project.projectUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Acessar Projeto
+                </a>
               </Button>
             )}
             <Button variant="outline" asChild>
-              <a href={project.repoUrl}>Acessar Repositório</a>
+              <a
+                href={project.repoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Acessar Repositório
+              </a>
             </Button>
           </div>
         </div>
