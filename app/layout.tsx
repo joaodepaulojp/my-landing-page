@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
-import LandingSection from "@/components/landingSection";
 
 const neueKonstant = localFont({
   src: "/fonts/neuekonstantgrotesk-book.otf",
@@ -22,10 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${neueKonstant.variable} dark`}>
-      <body className={`antialiased`}>
-        <LandingSection />
-        {children}
-      </body>
+      <body className={`antialiased`}>{children}</body>
     </html>
   );
 }
