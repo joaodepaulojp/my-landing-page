@@ -23,6 +23,22 @@ const arrayProjects = [
     projectUrl: "#",
     repoUrl: "https://github.com/joaodepaulojp/auth-login",
   },
+  {
+    id: 4,
+    name: "Flappy Bird",
+    description:
+      "Um remake do clássico Flappy Bird, desenvolvido em Python com Pygame!",
+    projectUrl: "#",
+    repoUrl: "https://github.com/joaodepaulojp/flappy-bird",
+  },
+  {
+    id: 5,
+    name: "Vestibulado Mobile",
+    description:
+      "Projeto da faculdade, um app mobile para ajudar estudantes a se prepararem para vestibulares.",
+    projectUrl: "#",
+    repoUrl: "https://github.com/joaodepaulojp/vestibulado-mobile",
+  },
 ];
 
 const Projects = () => {

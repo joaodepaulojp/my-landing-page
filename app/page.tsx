@@ -33,7 +33,9 @@ export default function Home() {
         <h1 className="text-2xl mt-6 mb-6">Projetos</h1>
         <Projects />
       </div>
-      <StacksLogo />
+      <div className="h-screen w-screen flex items-center">
+        <StacksLogo />
+      </div>
     </div>
   );
 }
