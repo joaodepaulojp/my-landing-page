@@ -1,5 +1,6 @@
 "use client";
 
+import Projects from "@/components/projects";
 import StacksLogo from "@/components/stacksLogo";
 import { Button } from "@/components/ui/button";
 
@@ -17,7 +18,20 @@ export default function Home() {
             </span>
           </em>
         </h1>
-        <Button className="mt-4">Ver Projetos</Button>
+        <Button
+          className="mt-4"
+          onClick={() => {
+            document
+              .getElementById("projects")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          Ver Projetos
+        </Button>
+      </div>
+      <div id="projects" className="h-screen w-screen flex p-4 flex-col">
+        <h1 className="text-2xl mt-6 mb-6">Projetos</h1>
+        <Projects />
       </div>
       <StacksLogo />
     </div>
