@@ -1,67 +1,15 @@
 "use client";
 
+import Menu from "@/components/menu";
 import Projects from "@/components/projects";
 import StacksLogo from "@/components/stacksLogo";
 import { Button } from "@/components/ui/button";
-
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="overflow-hidden relative">
       <div className="absolute top-4 right-4">
-        <Sheet>
-          <SheetTrigger>Menu</SheetTrigger>
-          <SheetContent>
-            <SheetHeader>
-              <SheetTitle>Menu</SheetTitle>
-              <SheetDescription>Para onde você quer ir?</SheetDescription>
-            </SheetHeader>
-            <div className="flex flex-col gap-4 mt-2 ml-4 items-start">
-              <Button
-                variant="link"
-                className="text-white text-xl cursor-pointer"
-                asChild
-              >
-                <Link href="https://github.com/joaodepaulojp">GitHub</Link>
-              </Button>
-              <Button
-                variant="link"
-                className="text-white text-xl cursor-pointer"
-              >
-                <Link href="https://linkedin.com/in/joao-depaulo">
-                  LinkedIn
-                </Link>
-              </Button>
-              <Button
-                variant="link"
-                className="text-white text-xl cursor-pointer"
-              >
-                <Link href="https://joaodepaulo.site">Meu Site</Link>
-              </Button>
-              <Button
-                variant="link"
-                className="text-white text-xl cursor-pointer"
-              >
-                <Link href="https://hackdodia.com">Blog</Link>
-              </Button>
-              <Button
-                variant="link"
-                className="text-white text-xl cursor-pointer"
-              >
-                <Link href="https://joaodepaulo.site/contact">Contato</Link>
-              </Button>
-            </div>
-          </SheetContent>
-        </Sheet>
+        <Menu />
       </div>
       <div className="h-screen w-screen flex items-center p-4 justify-center flex-col">
         <h1 className="text-3xl text-center">
