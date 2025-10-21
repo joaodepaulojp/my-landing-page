@@ -12,6 +12,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,12 +22,44 @@ export default function Home() {
           <SheetTrigger>Menu</SheetTrigger>
           <SheetContent>
             <SheetHeader>
-              <SheetTitle>Are you absolutely sure?</SheetTitle>
-              <SheetDescription>
-                This action cannot be undone. This will permanently delete your
-                account and remove your data from our servers.
-              </SheetDescription>
+              <SheetTitle>Menu</SheetTitle>
+              <SheetDescription>Para onde você quer ir?</SheetDescription>
             </SheetHeader>
+            <div className="flex flex-col gap-4 mt-2 ml-4 items-start">
+              <Button
+                variant="link"
+                className="text-white text-xl cursor-pointer"
+                asChild
+              >
+                <Link href="https://github.com/joaodepaulojp">GitHub</Link>
+              </Button>
+              <Button
+                variant="link"
+                className="text-white text-xl cursor-pointer"
+              >
+                <Link href="https://linkedin.com/in/joao-depaulo">
+                  LinkedIn
+                </Link>
+              </Button>
+              <Button
+                variant="link"
+                className="text-white text-xl cursor-pointer"
+              >
+                <Link href="https://joaodepaulo.site">Meu Site</Link>
+              </Button>
+              <Button
+                variant="link"
+                className="text-white text-xl cursor-pointer"
+              >
+                <Link href="https://hackdodia.com">Blog</Link>
+              </Button>
+              <Button
+                variant="link"
+                className="text-white text-xl cursor-pointer"
+              >
+                <Link href="https://joaodepaulo.site/contact">Contato</Link>
+              </Button>
+            </div>
           </SheetContent>
         </Sheet>
       </div>
