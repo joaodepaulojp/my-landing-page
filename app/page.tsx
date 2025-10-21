@@ -4,9 +4,32 @@ import Projects from "@/components/projects";
 import StacksLogo from "@/components/stacksLogo";
 import { Button } from "@/components/ui/button";
 
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+
 export default function Home() {
   return (
     <div className="overflow-hidden relative">
+      <div className="absolute top-4 right-4">
+        <Sheet>
+          <SheetTrigger>Menu</SheetTrigger>
+          <SheetContent>
+            <SheetHeader>
+              <SheetTitle>Are you absolutely sure?</SheetTitle>
+              <SheetDescription>
+                This action cannot be undone. This will permanently delete your
+                account and remove your data from our servers.
+              </SheetDescription>
+            </SheetHeader>
+          </SheetContent>
+        </Sheet>
+      </div>
       <div className="h-screen w-screen flex items-center p-4 justify-center flex-col">
         <h1 className="text-3xl text-center">
           <em>
