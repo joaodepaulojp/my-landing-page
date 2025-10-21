@@ -39,6 +39,13 @@ const arrayProjects = [
     projectUrl: "#",
     repoUrl: "https://github.com/joaodepaulojp/vestibulado-mobile",
   },
+  {
+    id: 6,
+    name: "HackDoDia.com",
+    description: "Um blog pessoal, feito com WordPress e Elementor gratuito.",
+    projectUrl: "https://hackdodia.com",
+    repoUrl: "#",
+  },
 ];
 
 const Projects = () => {
@@ -63,15 +70,17 @@ const Projects = () => {
                 </a>
               </Button>
             )}
-            <Button variant="outline" asChild>
-              <a
-                href={project.repoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Acessar Repositório
-              </a>
-            </Button>
+            {project.repoUrl !== "#" && (
+              <Button variant="outline" asChild>
+                <a
+                  href={project.repoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Acessar Repositório
+                </a>
+              </Button>
+            )}
           </div>
         </div>
       ))}
