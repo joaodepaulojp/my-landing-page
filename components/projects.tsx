@@ -43,9 +43,12 @@ const arrayProjects = [
 
 const Projects = () => {
   return (
-    <div className="flex flex-col space-y-6">
+    <div className="flex flex-col space-y-6 overflow-y-auto h-[87%]">
       {arrayProjects.map((project) => (
-        <div key={project.id} className="border p-4 space-y-4 rounded">
+        <div
+          key={project.id}
+          className="border p-4 space-y-4 rounded bg-[#15001b]"
+        >
           <h2 className="text-xl">{project.name}</h2>
           <p>{project.description}</p>
           <div className="justify-between flex">

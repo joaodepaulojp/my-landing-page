@@ -4,21 +4,33 @@ import {
   SiNextdotjs,
   SiTypescript,
   SiTailwindcss,
+  SiJavascript,
+  SiHtml5,
+  SiCss3,
+  SiPrisma,
+  SiMongodb,
+  SiPostgresql,
+  SiMysql,
+  SiGithub,
+  SiFigma,
+  SiAdobephotoshop,
 } from "react-icons/si";
 
 const techLogos = [
-  { node: <SiReact />, title: "React", href: "https://react.dev" },
-  { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
-  {
-    node: <SiTypescript />,
-    title: "TypeScript",
-    href: "https://www.typescriptlang.org",
-  },
-  {
-    node: <SiTailwindcss />,
-    title: "Tailwind CSS",
-    href: "https://tailwindcss.com",
-  },
+  { node: <SiHtml5 />, title: "HTML" },
+  { node: <SiCss3 />, title: "CSS" },
+  { node: <SiJavascript />, title: "JavaScript" },
+  { node: <SiTypescript />, title: "TypeScript" },
+  { node: <SiReact />, title: "React" },
+  { node: <SiNextdotjs />, title: "Next.js" },
+  { node: <SiTailwindcss />, title: "Tailwind CSS" },
+  { node: <SiPrisma />, title: "Prisma" },
+  { node: <SiMongodb />, title: "MongoDB" },
+  { node: <SiPostgresql />, title: "PostgreSQL" },
+  { node: <SiMysql />, title: "MySQL" },
+  { node: <SiGithub />, title: "GitHub" },
+  { node: <SiFigma />, title: "Figma" },
+  { node: <SiAdobephotoshop />, title: "Adobe Photoshop" },
 ];
 
 // Alternative with image sources
@@ -52,7 +64,7 @@ const StacksLogo = () => {
         pauseOnHover
         scaleOnHover
         fadeOut
-        fadeOutColor="#000"
+        fadeOutColor="#0d0011"
         ariaLabel="Technology partners"
       />
     </div>

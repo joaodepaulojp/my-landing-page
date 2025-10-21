@@ -11,6 +11,10 @@ export default function Home() {
       <div className="absolute top-4 right-4">
         <Menu />
       </div>
+
+      <div className="absolute h-screen w-screen pt-[60vh] text-[#cc0033] opacity-50 z-[-1]">
+        <StacksLogo />
+      </div>
       <div className="h-screen w-screen flex items-center p-4 justify-center flex-col">
         <h1 className="text-3xl text-center">
           <em>
@@ -36,9 +40,6 @@ export default function Home() {
       <div id="projects" className="h-screen w-screen flex p-4 flex-col">
         <h1 className="text-2xl mt-6 mb-6">Projetos</h1>
         <Projects />
-      </div>
-      <div className="h-screen w-screen flex items-center">
-        <StacksLogo />
       </div>
     </div>
   );
